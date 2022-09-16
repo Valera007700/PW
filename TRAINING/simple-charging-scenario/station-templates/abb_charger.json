@@ -1,0 +1,194 @@
+{
+  "authorizationFile": "authorization-tags-abb_charger.json",
+  "baseName": "L2210052F01040336A05",
+  "fixedName": true,
+  "chargePointModel": "simulated_abb_charger",
+  "chargePointVendor": "abb",
+  "power": 11000,
+  "powerUnit": "W",
+  "powerSharedByConnectors": true,
+  "currentOutType": "DC",
+  "numberOfPhases": 0,
+  "numberOfConnectors": 2,
+  "randomConnectors": false,
+  "beginEndMeterValues": true,
+  "outOfOrderEndMeterValues": false,
+  "transactionDataMeterValues": false,
+  "enableStatistics": false,
+  "Configuration": {
+    "configurationKey": [
+      {
+        "key": "ChargingScheduleAllowedChargingRateUnit",
+        "readonly": true,
+        "value": "Power"
+      },
+      {
+        "key": "ChargeProfileMaxStackLevel",
+        "readonly": true,
+        "value": "1"
+      },
+      {
+        "key": "ChargingScheduleMaxPeriods",
+        "readonly": true,
+        "value": "1"
+      },
+      {
+        "key": "MaxChargingProfilesInstalled",
+        "readonly": true,
+        "value": "1"
+      },
+      {
+        "key": "MeterValuesSampledData",
+        "readonly": false,
+        "value": "Current.Import,Energy.Active.Import.Register,Power.Active.Import,Voltage,SoC,Power.Offered"
+      },
+      {
+        "key": "MeterValuesAlignedData",
+        "readonly": false,
+        "value": "Current.Import,Energy.Active.Import.Register,Power.Active.Import,Voltage,SoC,Power.Offered"
+      },
+      {
+        "key": "MeterValueSampleInterval",
+        "readonly": false,
+        "value": "15"
+      },
+      {
+        "key": "SupportedFeatureProfiles",
+        "readonly": true,
+        "value": "Core,LocalAuthListManagement,SmartCharging"
+      },
+      {
+        "key": "LocalAuthListEnabled",
+        "readonly": false,
+        "value": "false"
+      },
+      {
+        "key": "AuthorizeRemoteTxRequests",
+        "readonly": false,
+        "value": "true"
+      },
+      {
+        "key": "WebSocketPingInterval",
+        "readonly": false,
+        "value": "10"
+      },
+      {
+        "key": "HeartbeatInterval",
+        "readonly": false,
+        "value": "60"
+      },
+      {
+        "key": "FreevendEnabled",
+        "value": "true",
+        "readonly": false
+      },
+      {
+        "key": "FreevendIdTag",
+        "value": "NOA",
+        "readonly": false
+      },
+      {
+        "key": "StopTransactionOnEVSideDisconnect",
+        "value": "true",
+        "readonly": false
+      },
+      {
+        "key": "UnlockConnectorOnEVSideDisconnect",
+        "value": "true",
+        "readonly": false
+      }
+    ]
+  },
+  "AutomaticTransactionGenerator": {
+    "enable": true,
+    "minDuration": 60,
+    "maxDuration": 60,
+    "minDelayBetweenTwoTransactions": 60,
+    "maxDelayBetweenTwoTransactions": 60,
+    "probabilityOfStart": 1,
+    "stopAfterHours": 5000,
+    "stopOnConnectionFailure": false,
+    "requireAuthorize": false
+  },
+  "Connectors": {
+    "0": {},
+    "1": {
+      "bootStatus": "Available",
+      "MeterValues": [
+        {
+          "unit": "Wh",
+          "context": "Sample.Periodic",
+          "format": "Raw",
+          "location": "Outlet",
+          "measurand": "Energy.Active.Import.Register",
+          "fluctuationPercent": "0"
+        },
+        {
+          "unit": "W",
+          "context": "Sample.Periodic",
+          "measurand": "Power.Active.Import",
+          "format": "Raw",
+          "location": "Outlet",
+          "fluctuationPercent": "0"
+        },
+        {
+          "unit": "Percent",
+          "context": "Sample.Periodic",
+          "measurand": "SoC",
+          "format": "Raw",
+          "location": "EV",
+          "fluctuationPercent": "0"
+        },
+        {
+          "unit": "V",
+          "context": "Sample.Periodic",
+          "measurand": "Voltage"
+        },
+        {
+          "unit": "A",
+          "context": "Sample.Periodic",
+          "measurand": "Current.Import"
+        }
+      ]
+    },
+    "2": {
+      "bootStatus": "Preparing",
+      "MeterValues": [
+        {
+          "unit": "Wh",
+          "context": "Sample.Periodic",
+          "format": "Raw",
+          "location": "Outlet",
+          "measurand": "Energy.Active.Import.Register",
+          "fluctuationPercent": "0"
+        },
+        {
+          "unit": "W",
+          "context": "Sample.Periodic",
+          "measurand": "Power.Active.Import",
+          "format": "Raw",
+          "location": "Outlet",
+          "fluctuationPercent": "0"
+        },
+        {
+          "unit": "Percent",
+          "context": "Sample.Periodic",
+          "measurand": "SoC",
+          "format": "Raw",
+          "location": "EV",
+          "fluctuationPercent": "0"
+        },
+        {
+          "unit": "V",
+          "context": "Sample.Periodic",
+          "measurand": "Voltage"
+        },
+        {
+          "unit": "A",
+          "context": "Sample.Periodic",
+          "measurand": "Current.Import"
+        }
+      ]
+    }
+  }
+}

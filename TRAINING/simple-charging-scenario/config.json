@@ -1,0 +1,24 @@
+{
+  "supervisionURLs": [
+    "wss://dm-uat.incharge.network:443/ocpp"
+  ],
+  "distributeStationsToTenantsEqually": true,
+  "performanceStorage": {
+    "enabled": true
+  },
+  "chargingStationsPerWorker": 1,
+  "workerProcess": "workerSet",
+  "workerPoolMinSize": 4,
+  "workerPoolMaxSize": 16,
+  "stationTemplateURLs": [
+    {
+      "file": "abb_charger.json",
+      "numberOfStations": 1
+    }
+  ],
+  "logConsole": true,
+  "logLevel": "debug",
+  "logStatisticsInterval": 0,
+  "logFile": "logs/simple-charging-scenario.yaml.log",
+  "logErrorFile": "logs/errors-simple-charging-scenario.yaml.log"
+}

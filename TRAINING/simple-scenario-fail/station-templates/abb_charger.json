@@ -1,0 +1,133 @@
+{
+  "authorizationFile": "authorization-tags-abb_charger.json",
+  "baseName": "yars_created_sn_2",
+  "fixedName": true,
+  "chargePointModel": "simulated_abb_charger",
+  "chargePointVendor": "abb",
+  "power": 11000,
+  "powerUnit": "W",
+  "powerSharedByConnectors": true,
+  "currentOutType": "DC",
+  "numberOfPhases": 0,
+  "numberOfConnectors": 1,
+  "randomConnectors": false,
+  "beginEndMeterValues": true,
+  "outOfOrderEndMeterValues": false,
+  "transactionDataMeterValues": false,
+  "enableStatistics": false,
+  "Configuration": {
+    "configurationKey": [
+      {
+        "key": "ChargingScheduleAllowedChargingRateUnit",
+        "readonly": true,
+        "value": "Power"
+      },
+      {
+        "key": "ChargeProfileMaxStackLevel",
+        "readonly": true,
+        "value": "1"
+      },
+      {
+        "key": "ChargingScheduleMaxPeriods",
+        "readonly": true,
+        "value": "1"
+      },
+      {
+        "key": "MaxChargingProfilesInstalled",
+        "readonly": true,
+        "value": "1"
+      },
+      {
+        "key": "MeterValuesSampledData",
+        "readonly": false,
+        "value": "Current.Import,Energy.Active.Import.Register,Power.Active.Import,Voltage,SoC,Power.Offered"
+      },
+      {
+        "key": "MeterValuesAlignedData",
+        "readonly": false,
+        "value": "Current.Import,Energy.Active.Import.Register,Power.Active.Import,Voltage,SoC,Power.Offered"
+      },
+      {
+        "key": "MeterValueSampleInterval",
+        "readonly": false,
+        "value": "15"
+      },
+      {
+        "key": "SupportedFeatureProfiles",
+        "readonly": true,
+        "value": "Core,LocalAuthListManagement,SmartCharging"
+      },
+      {
+        "key": "LocalAuthListEnabled",
+        "readonly": false,
+        "value": "false"
+      },
+      {
+        "key": "AuthorizeRemoteTxRequests",
+        "readonly": false,
+        "value": "true"
+      },
+      {
+        "key": "WebSocketPingInterval",
+        "readonly": false,
+        "value": "10"
+      },
+      {
+        "key": "HeartbeatInterval",
+        "readonly": false,
+        "value": "600"
+      },
+      {
+        "key": "FreevendEnabled",
+        "value": "true",
+        "readonly": false
+      },
+      {
+        "key": "FreevendIdTag",
+        "value": "NOA",
+        "readonly": false
+      },
+      {
+        "key": "StopTransactionOnEVSideDisconnect",
+        "value": "true",
+        "readonly": false
+      },
+      {
+        "key": "UnlockConnectorOnEVSideDisconnect",
+        "value": "true",
+        "readonly": false
+      }
+    ]
+  },
+  "AutomaticTransactionGenerator": {
+    "enable": false,
+    "minDuration": 300,
+    "maxDuration": 300,
+    "minDelayBetweenTwoTransactions": 1,
+    "maxDelayBetweenTwoTransactions": 1,
+    "probabilityOfStart": 1,
+    "stopAfterHours": 0.008,
+    "stopOnConnectionFailure": false,
+    "requireAuthorize": false
+  },
+  "Connectors": {
+    "0": {
+    },
+    "1": {
+      "bootStatus": "Faulted",
+      "errorCode": "ConnectorLockFailure",
+      "MeterValues": [
+        {
+          "unit": "Percent",
+          "context": "Sample.Periodic",
+          "measurand": "SoC",
+          "location": "EV"
+        },
+        {
+          "unit": "Wh",
+          "context": "Sample.Periodic"
+        }
+      ]
+    }
+  }
+}
