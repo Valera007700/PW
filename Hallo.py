@@ -1,3 +1,10 @@
-name = input ("What is your name? --> ");
-print("Hallo, ", name)
-#print(name);
+color = input ("Please type your favorite color: ");
+print(" Your favorite color is\n", color);
+
+
+
+
+
+#Please type your favorite color: Blue
+#Your favorite color is
+#Blue
