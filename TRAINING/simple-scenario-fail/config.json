@@ -1,6 +1,6 @@
 {
   "supervisionURLs": [
-    "wss://dm-dev.incharge.network:443/ocpp"
+    "wss://dm-uat.incharge.network:443/ocpp"
   ],
   "distributeStationsToTenantsEqually": true,
   "performanceStorage": {
