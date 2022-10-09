@@ -1,4 +1,3 @@
-coding: utf8
 #first_num = input('первая цифра = ')
 #second= input('вторая цифра = ')
 
