@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\TRAINING",
-    "\\TRAINING\\simple-scenario-fail",
-    "\\TRAINING\\simple-scenario-fail\\station-templates"
+    ""
   ],
-  "SelectedNode": "\\math.py",
+  "SelectedNode": "\\Game.py",
   "PreviewInSolutionExplorer": false
 }
