@@ -1,51 +1,70 @@
 
-print ("two items: a  MATCH and a FLASHLIGHT. Which one do you want to pick up?")   
-q = (str(input('I would like take\n')))
+print ("Today you are going on a journey :) I'll ask you a few questions. \nThink carefully before you decide what to take with you.\nWhich one do you want to pick up: match OR flashlight ?")   
+q = (str(input('I would like take: ')))
+print("\n")
 
-if q == "1":                                                                   
+if q == "match":                                                                   
     print("You choosed ", q, "\nAnd right noooow, next question for your trip :) ");
+    print("\n")
 
-        q_1 =  (str(input("1.1 OR 1.2, What would you like?\n")))
-        if q_1 == "1.1":                                                          
-            print("You choosed ", q_1, "\nAnd right noooow, next question for your trip :)" );
+    q_1 =  (str(input("What would you like to take:me or her? ")))
+    if q_1 == "me":                                                          
+            print("You choosed ", q_1, "\nAnd neeeeext question for your trip :)" );
 
-            q_2 = (str(input("1.1.1 OR 1.1.2")))
-            if q_2 == "1.1.1":
-                print("1.1.1");
-            elif q_2 == "1.1.2":
-                print("1.1.2");
+            q_2_1 = (str(input("dark or blue\n")))
+            if q_2_1 == "dark":
+                print("You took", q_2_1);
+            elif q_2_1 == "blue":
+                print("You took", q_2_1);
             else:
                 print ("get out here!");
 
 
 
 
-    elif q_1 == "1.2":
-        print("1.2");
+    elif q_1 == "her":
+            print("You choosed ", q_1, "\nAnd neeeeext question for your trip :)");
         
-        answer_3_2 = (str(input("")))
-        if answer_3_2 == "1.2.1":
-            print("1.2.1");
-        elif answer_3_2 == "1.2.2":
-            print ("1.2.2");
-    else:
-        print("get out of here");
-elif q == "2":
-    print("2");
-    answer_2 =  (str(input("")))
-    if answer_2 == "2.1":
-        print("2.1")
-        answer_2_2 =  (str(input("")))
-        if answer_2_2 == "2.1.1":
-            print("2.1.1")
-        elif answer_2_2 == "2.1.2":
-            print ("2.1.2")
-    elif answer_2 == "2.2":
-        print("2.2");
-        answer_2_4 =  (str(input("")))
-        if answer_2_4 == "2.2.1":
-            print("2.2.1")
-        elif answer_2_4 == "2.2.2":
-            print ("2.2.2")
+            q_2_2 = (str(input("happy or mad\n")))
+            if q_2_2 == "happy":
+                print("You are ", q_2_2);
+            elif q_2_2 == "mad":
+                print ("You are", q_2_2);
+            else:
+                print("get out of here");
+######################################################################################################################################
+elif q == "flashlight":                                                                   
+    print("You choosed ", q, "\nAnd right noooow, next question for your trip :) ");
+    print("\n")
+
+    q_1 =  (str(input("What would you like to take:fish or meat? ")))
+    if q_1 == "fish":                                                          
+            print("You choosed ", q_1, "\nAnd neeeeext question for your trip :)" );
+
+            q_2_1 = (str(input("sugar or salt\n")))
+            if q_2_1 == "sugar":
+                print("You took", q_2_1);
+            elif q_2_1 == "salt":
+                print("You took", q_2_1);
+            else:
+                print ("get out here!");
+
+    elif q_1 == "meat":
+            print("You choosed ", q_1, "\nAnd neeeeext question for your trip :)");
+        
+            q_2_2 = (str(input("iPhone or Android\n")))
+            if q_2_2 == "iPhone":
+                print("You are ", q_2_2);
+            elif q_2_2 == "Android":
+                print ("You are", q_2_2);
+            else:
+                print("get out of here");
+
+
+
+
+
 else:
-    print("wrong");
+    print("GET OUT OF HERE!!!! ");
+
+#add timing
